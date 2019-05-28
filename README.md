@@ -1,8 +1,6 @@
 kubernetes
 
 
-MASTER安装配置
-
 1. 安装并配置Kubernetes master
 
     安装
@@ -89,14 +87,14 @@ MASTER安装配置
 
 在master创建RC/Pod/Server
 
-kubectl create -f redis-master-Rcontroller.yml
-kubectl create -f redis-master-service.yml
-kubectl create -f redis-slave-Rcontroller.yml
-kubectl create -f redis-slave-service.yml
-kubectl create -f frontend-controller.yml
+    kubectl create -f redis-master-Rcontroller.yml
+    kubectl create -f redis-master-service.yml
+    kubectl create -f redis-slave-Rcontroller.yml
+    kubectl create -f redis-slave-service.yml
+    kubectl create -f frontend-controller.yml
 
 
 修改副本命令
 
-kubectl scale rc redis-master  --replicas=1
+    kubectl scale rc redis-master  --replicas=1
 
