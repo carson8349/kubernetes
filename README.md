@@ -91,7 +91,9 @@ kubernetes
     kubectl create -f redis-master-service.yml
     kubectl create -f redis-slave-Rcontroller.yml
     kubectl create -f redis-slave-service.yml
-    kubectl create -f frontend-controller.yml
+    kubectl create -f frontend-Rcontroller.yml
+    kubectl create -f frontend-service.yml
+
 
 
 修改副本命令
